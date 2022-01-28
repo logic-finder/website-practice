@@ -1,0 +1,302 @@
+/* || Initialize */
+html, body {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* || Font */
+@font-face {
+  font-family: 'MapleStory';
+  src: url('MapleStoryLight.ttf') format('truetype');
+}
+
+/* || Scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* || Layout */
+html, body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: inherit;
+  height: 150px;
+}
+
+header div#lang-change-part {
+  width: 180px;
+  height: 60px;
+}
+
+section#video-section {
+  width: inherit;
+  height: calc(100vh - 150px);
+}
+
+section#introduction-section {
+  width: inherit;
+  height: inherit;
+}
+
+section#travel-story {
+  width: inherit;
+}
+
+footer {
+  width: inherit;
+  height: 100px;
+}
+
+/* || Style */
+header {
+  background-color: black;
+  position: relative;
+}
+
+header translated-span#title {
+  font-size: 60px;
+  font-family: 'MapleStory';
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+header div#lang-change-part {
+  background-color: white;
+  border-radius: 0 0 3px 3px;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+}
+
+header div#lang-change-part translated-span {
+  font-family: 'MapleStory';
+  font-size: 20px;
+  position: absolute;
+}
+
+header div#lang-change-part translated-span#change-lang {
+  font-weight: bold;
+  left: 5px;
+  top: 5px;
+}
+
+header div#lang-change-part translated-span#ko {
+  left: 5px;
+  top: 33px;
+}
+
+header div#lang-change-part translated-span#en {
+  left: 65px;
+  top: 33px;
+}
+
+section#video-section video {
+  object-fit: cover;
+}
+
+section#introduction-section {
+  position: relative;
+}
+
+section#introduction-section div#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/ganyu_standing.png');
+  opacity: 0.2;
+}
+
+section#introduction-section div#description {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left: 200px;
+  top: calc((100% / 2) - (492px / 2));
+}
+
+section#introduction-section div#description translated-span#who {
+  font-size: 80px;
+  font-family: 'MapleStory';
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+section#introduction-section div#description translated-span#quote {
+  font-size: 20px;
+  font-family: 'MapleStory';
+  text-align: justify;
+  width: 400px;
+  height: auto;
+  padding: 10px 20px 10px 30px;
+  background-color: lightgray;
+  border-left: 5px solid gray;
+  border-radius: 5px;
+  position: absolute;
+  top: 120px;
+  left: 40px;
+}
+
+section#introduction-section div#description translated-span#intro {
+  font-size: 30px;
+  font-family: 'MapleStory';
+  text-align: justify;
+  position: absolute;
+  top: 250px;
+}
+
+section#introduction-section figure#fig {
+  position: absolute;
+  right: 200px;
+  top: calc((100% / 2) - (492px / 2));
+}
+
+section#introduction-section figure#fig img {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+section#introduction-section figure#fig figcaption {
+  font-size: 20px;
+  font-family: 'MapleStory';
+  text-align: center;
+}
+
+section#travel-story {
+  background-color: lightgray;
+  position: relative;
+}
+
+section#travel-story p {
+  padding: 20px;
+}
+
+section#travel-story div.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+section#travel-story div.container div.text-container {
+  width: 500px;
+  height: auto;
+  text-align: justify;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+section#travel-story div.container img {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+section#travel-story p translated-span {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'MapleStory';
+}
+
+section#travel-story translated-span {
+  font-size: 30px;
+  font-family: 'MapleStory';
+}
+
+footer {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p translated-span {
+  font-size: 20px;
+  font-family: 'MapleStory';
+}
+
+body {
+  position: relative;
+}
+
+div#up-icon {
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  top: 50px;
+  left: calc(100% / 2);
+  animation-name: up-icon-smooth;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+div#down-icon {
+  position: fixed;
+  color: white;
+  font-size: 30px;
+  bottom: 50px;
+  left: calc(100% / 2);
+  animation-name: down-icon-smooth;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes up-icon-smooth {
+  0% {
+    top: 50px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 50px;
+  }
+}
+
+@keyframes down-icon-smooth {
+  0% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 20px;
+  }
+
+  100% {
+    bottom: 50px;
+  }
+}

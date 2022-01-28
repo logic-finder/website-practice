@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>감우와의 여행...</title>
+    <link rel="stylesheet" href="public/index.css">
+  </head>
+  <body>
+    <header>
+      <translated-span id="title" src="header.title"></translated-span>
+      <div id="lang-change-part">
+        <translated-span id="change-lang" src="header.changeLang"></translated-span>
+        <translated-span id="ko" deco="true" src="header.ko"></translated-span>
+        <translated-span id="en" deco="true" src="header.en"></translated-span>
+      </div>
+    </header>
+    <section id="video-section">
+      <video width="100%" height="100%" autoplay muted loop>
+        <source src="public/ganyu_wish.mp4" type="video/mp4">
+        <translated-span src="video.notSupported"></translated-span>
+      </video>
+    </section>
+    <section id="introduction-section">
+      <div id="background"></div>
+      <div id="description">
+        <translated-span id="who" src="introduction.who"></translated-span>
+        <translated-span id="quote" src="introduction.quote"></translated-span>
+        <translated-span id="intro" src="introduction.intro"></translated-span>
+      </div>
+      <figure id="fig">
+        <img id="picture" src="public/img/ganyu_sleeping.png" alt="Under the setting Sun, Ganyu is sleeping in front of a qingxin flower.">
+        <figcaption><translated-span src="introduction.figcaption"></translated-span></figcaption>
+      </figure>
+    </section>
+    <section id="travel-story">
+      <p>
+        <translated-span src="ts.ts1"></translated-span>
+      </p>
+      <div class="container">
+        <div class="text-container">
+          <translated-span src="ts.ts2"></translated-span>
+        </div>
+        <img alt="Ganyu threatening" src="public/img/ganyu_threatening.png">
+      </div>
+      <div class="container">
+        <img alt="Ganyu cooking" src="public/img/ganyu_cooking.png">
+        <div class="text-container">
+          <translated-span src="ts.ts3"></translated-span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-container">
+          <translated-span src="ts.ts4"></translated-span>
+        </div>
+        <img alt="Ganyu eating" src="public/img/ganyu_eating.png">
+      </div>
+      <p>
+        <translated-span src="ts.ts5"></translated-span>
+      </p>
+      <div class="container">
+        <img alt="Ganyu flying" src="public/img/ganyu_flying.png">
+        <div class="text-container">
+          <translated-span src="ts.ts6"></translated-span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-container">
+          <translated-span src="ts.ts7"></translated-span>
+        </div>
+        <img alt="Ganyu gets hurt" src="public/img/ganyu_hurt.png">
+      </div>
+      <div class="container">
+        <img alt="exit game" src="public/img/game_exit.png">
+        <div class="text-container">
+          <translated-span src="ts.ts8"></translated-span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        <translated-span src="footer.greeting"></translated-span>
+      </p>
+      <p>
+        <translated-span src="footer.githubRepo"></translated-span>
+      </p>
+      <p>
+        <translated-span src="footer.usedFont"></translated-span>
+      </p>
+    </footer>
+    <div id="up-icon">▲</div>
+    <div id="down-icon">▼</div>
+    <script src="public/lang/text-ko.js"></script>
+    <script src="public/lang/text-en.js"></script>
+    <script src="public/index.js"></script>
+    <script src="public/TranslatedSpan.js"></script>
+  </body>
+</html>
